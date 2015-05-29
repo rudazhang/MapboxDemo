@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CicLAvia : Pasadena</title>
+	<meta charset="utf-8" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+	<div id="map"></div>
+    <a href='#' id='geolocate' class='ui-button'>Find me</a>
+    <div id="info"><h1>CicLAvia : Pasadena</h1><div id="infobox"><p>3.5 miles of Open Streets!</p><p>Bike, walk and pogostick down Colorado Blvd!</p> </div>
+    </div>
+	<script>
+         var map = L.map('map') 	//L stans for leaflet
+        .setView([34.147844, -118.144392], 16);
+
+
+        //Code to add Basemaps
+        var baselayers = {
+				CicLAvia: L.tileLayer('https://{s}.tiles.mapbox.com/v4/cruzin73vw.lczhncdi/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3J1emluNzN2dyIsImEiOiI3RDdhUi1NIn0.jaEqREZw7QQMRafKPNBdmA').addTo(map),
+        Streets: L.tileLayer('https://{s}.tiles.mapbox.com/v4/examples.map-i87786ca/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3J1emluNzN2dyIsImEiOiI3RDdhUi1NIn0.jaEqREZw7QQMRafKPNBdmA'),
+        Satellite: L.tileLayer('https://{s}.tiles.mapbox.com/v4/examples.map-igb471ik/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3J1emluNzN2dyIsImEiOiI3RDdhUi1NIn0.jaEqREZw7QQMRafKPNBdmA')
+        };
+
+        L.control.layers(baselayers).addTo(map);
+
+        //Create locations for geojson
+        var routes="data/ciclavia_route.geojson";
+        var hubs="data/ciclavia_hubs.geojson";
+        var landmarks="data/ciclavia_landmarks.geojson";
+
+        //Styles and loads the Hubs
+        $.getJSON(hubs, function(data) {
+        var hubsLayer = L.geoJson(data, {
+                style:{
+                fillColor:"#ff7f00",
+                color: "#000",
+                weight: 0,
+                opacity: 0,
+                fillOpacity: 0.8
+                },
+        onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.Hub);
+        }
+        }).addTo(map);
+        });
+
+        //Styles and loads the routes ($ stands for jQuery)
+        $.getJSON(routes, function(data) {
+        var routesLayer = L.geoJson(data, {
+                style:{
+                color: "#ff78b4",
+                weight: 10,
+                },
+        onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.Route);
+        }
+        }).addTo(map);
+        });
+
+        //Styles and loads the landmarks
+        $.getJSON(landmarks, function(data) {
+        var landmarksLayer = L.geoJson(data, {
+            style:{
+                fillColor:"#ff7f00",
+                color: "#000",
+                weight: 0,
+                opacity: 0,
+                fillOpacity: 0.8
+                },
+            pointToLayer: function(feature, latlon) {
+            return L.circleMarker(latlon, 5).bindPopup("<h2>"+feature.properties.Landmarks+"</h2>"+feature.properties.Info);
+            }
+        }).addTo(map);
+        });
+
+        //This code for GPS location
+        var geolocation = L.layerGroup().addTo(map);
+        var mapbounds=map.getBounds();
+
+        var geolocate = document.getElementById('geolocate');
+
+        if (!navigator.geolocation) {
+        geolocate.innerHTML = 'Geolocation is not available';
+        } else {
+        geolocate.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        map.locate();
+        };
+        }
+        map.on('locationfound', function(e) {
+        L.marker([e.latlng.lat, e.latlng.lng]).addTo(geolocation)
+				.bindPopup("Here I am!").openPopup();
+        map.panTo([e.latlng.lat, e.latlng.lng]);
+        // And hide the geolocation button
+        geolocate.parentNode.removeChild(geolocate);
+        } );
+
+        // If the user chooses not to allow their location
+        // to be shared, display an error message.
+        map.on('locationerror', function() {
+        geolocate.innerHTML = 'Position could not be found';
+        });
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+
+  "features": [{
+    "type": "Feature",
+    "properties": {
+      "id": 1,
+      "Landmarks": "One Colorado",
+      "Info": "Full city block along Colorado Blvd. Between De Lacey and Fair Oaks"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.15141256324472, 34.146013357257502]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 2,
+      "Landmarks": "Bear Building",
+      "Info": "2 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.1501125281835, 34.145583931240225]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 3,
+      "Landmarks": "Kinney-Kendall Building",
+      "Info": "65 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14926294386719, 34.145985043523496]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 4,
+      "Landmarks": "Site of First Presbyterian Church (now Post Office)",
+      "Info": "Corner of Colorado Blvd and Garfield Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14470141733661, 34.146051108890902]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 5,
+      "Landmarks": "City Hall \/ Civic Center",
+      "Info": "100 Garfield Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14365226623455, 34.147660256579144]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 6,
+      "Landmarks": "Maryland Hotel",
+      "Info": "411 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14267723993864, 34.146055827843888]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 7,
+      "Landmarks": "Memorial Park \/ Memorial Park Metro Station",
+      "Info": "85 E. Holly St"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14855020534677, 34.147787665790339]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 8,
+      "Landmarks": "Armory Center for the Arts",
+      "Info": "145 N. Raymond Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14912039616311, 34.148335051326193]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 9,
+      "Landmarks": "Vanderbort Commercial Block",
+      "Info": "26-38 S Raymond Ave."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14860722442837, 34.144942147629045]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 10,
+      "Landmarks": "Raymond Theatre",
+      "Info": "129 N Raymond Ave."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14911469425492, 34.14782069777668]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 11,
+      "Landmarks": "Braley Building",
+      "Info": "35 S. Raymond Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14926294386714, 34.145154503040104]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 12,
+      "Landmarks": "Hotel Green",
+      "Info": "99 S. Raymond Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14923443432635, 34.143955867723399]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 13,
+      "Landmarks": "Central Park",
+      "Info": "275 S. Raymond Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14964497171411, 34.143304633531955]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 14,
+      "Landmarks": "Site of California Cycleway",
+      "Info": "Dayton Street, just behind the Castle Green"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14965637553043, 34.143729352052247]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 15,
+      "Landmarks": "Del Mar Station \/ Site of Santa Fe Station",
+      "Info": "230 S. Raymond Ave."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14853309962226, 34.14119044735461]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 16,
+      "Landmarks": "Pacific Asia Museum",
+      "Info": "46 N Los Robles Ave."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14120044572429, 34.146329526666229]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 17,
+      "Landmarks": "Warner Building",
+      "Info": "477 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.14078990833654, 34.146036952030364]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 18,
+      "Landmarks": "Pasadena Star-News Building",
+      "Info": "525 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13934732557124, 34.146041670984147]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 19,
+      "Landmarks": "Pasadena Presbyterian Church",
+      "Info": "585 E Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13885125956101, 34.146032233076319]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 20,
+      "Landmarks": "United Artists Theatre",
+      "Info": "606 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13780781036715, 34.145744376381231]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 21,
+      "Landmarks": "Pasadena Playhouse",
+      "Info": "39 S. El Molino Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13703235085696, 34.145281916030534]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 22,
+      "Landmarks": "Vroman's Bookstore",
+      "Info": "695 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13609723791818, 34.146079422604885]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 23,
+      "Landmarks": "Robinson's Department Store Building",
+      "Info": "777 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13457482843859, 34.146084141556294]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 24,
+      "Landmarks": "Bullock's Pasadena (Macy's)",
+      "Info": "401 S. Lake Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13264758347941, 34.138972382672577]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 25,
+      "Landmarks": "Burlington Arcade",
+      "Info": "380 S. Lake Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13197475831615, 34.139562299175616]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 26,
+      "Landmarks": "Haskett Court",
+      "Info": "834 E. California Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13283574644881, 34.135692371811864]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 27,
+      "Landmarks": "Pie 'n Burger",
+      "Info": "913 E. California Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13175238389778, 34.136051055458054]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 28,
+      "Landmarks": "Bard's Theater",
+      "Info": "1003 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.13017295533655, 34.146173801582954]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 29,
+      "Landmarks": "Site of the Giddings House",
+      "Info": "Corner of Colorado Blvd. and Holliston Ave"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.12372409720388, 34.145697186665515]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 30,
+      "Landmarks": "Holliston Avenue Methodist Church (Community Church at Holliston)",
+      "Info": "1305 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.12360435713246, 34.146154925795777]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 31,
+      "Landmarks": "Padadena City College \/ Pasadena High School",
+      "Info": "1570 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.11747480585699, 34.145078998955128]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "id": 32,
+      "Landmarks": "Saga Motor Hotel",
+      "Info": "1633 E. Colorado Blvd"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-118.11594099256105, 34.146216272088679]
+    }
+  }]
+}
